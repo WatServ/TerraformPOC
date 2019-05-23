@@ -12,7 +12,7 @@ resource "azurerm_resource_group" "main" {
   location = "canadacentral"
 }
 
-resource "azurerm_virtual_machine" “test” 
+resource "azurerm_virtual_machine" "test" 
 {
   name                = "tfpoc"
   resource_group_name = "${azurerm_resource_group.main.name}"
